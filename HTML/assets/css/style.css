@@ -37,12 +37,12 @@ body {
 }
 
 #first-section {
-    padding-top: 5px;
-    height: 100vh;
-    background-image: url(/assets/img/background.png);
+    height: 70vh;
+    background-color: #32373b;
 }
 
 #decalogue {
+    padding-top: 6rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -55,19 +55,30 @@ body {
 .decalogue-item:hover {
     width: 50%;
     background-color: black;
-    padding: 1.5rem;
+    padding: 1.1rem;
     cursor: pointer;
     text-align: center;
+    opacity: 0.5;
+    border-radius: 50px;
+    border: 4px dotted white;
 }
 
 #second-section {
     height: 100vh;
     display: flex;
     gap: 5%;
+    padding-top: 5%;
+    background-color: #32373b;
+    justify-content: center;
+    border-top: 10px double white;
 }
 
-.square {
-    border: 1px solid red;
-    width: 25rem;
-    height: 25rem;
+#footer {
+    border-top: 10px double white;
+    height: 25vh;
+    background-color: #32373b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
 }
