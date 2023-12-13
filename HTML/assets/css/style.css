@@ -1,28 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen&display=swap');
 
 body {
     margin: 0;
     padding: 0;
 }
 
+#text-logo {
+    font-family: 'Qwitcher Grypen';
+    font-size: 45px;
+    padding: 0;
+    margin: 0;
+    width: max-content;
+}
+
 #nav-bar > ul {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
     list-style: none;
-    margin-top: 0;
     margin-bottom: 0;
-    height: 5.8vh;
+    padding-left: 0;
+    height: 7vh;
     width: 100%;
     position: fixed;
-    background-color: black;
+    background: linear-gradient(#474448 30deg, #f1f0ea);
     color: white;
     font-family: VT323;
     font-size: 23px;
 }
 
-#nav-bar > ul > li {
-    padding: 1rem;
+#nav-bar > .items-nav-bar-1 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+    left: 50vw;
+}
+
+#nav-bar > .items-nav-bar-2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    right: 50vw;
+    padding-left: 1.5rem;
+}
+
+#nav-bar > .items-nav-bar-1 > li{
+    padding: 0 1.5rem 0 1.5rem;
 }
 
 #nav-bar > ul > li > a:link {
@@ -30,19 +53,26 @@ body {
     color: white;
 }
 
-/* Las propiedades de color cambiarán */
 #nav-bar > ul > li > a:visited {
     text-decoration: none;
     color: white;
 }
 
+#nav-bar > ul > li > a:hover {
+    box-shadow: 6px 0 0 whitesmoke;
+    padding-right: 6px;
+}
+
 #first-section {
-    height: 70vh;
-    background-color: #32373b;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: linear-gradient(#534b52, #f1f0ea);
 }
 
 #decalogue {
-    padding-top: 6rem;
+    width: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -50,33 +80,32 @@ body {
     color: white;
     font-family: VT323;
     font-size: 25px;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    border-radius: 50px;
+    background: linear-gradient(#2d232e, #e0ddcf);
 }
 
 .decalogue-item:hover {
-    width: 50%;
-    background-color: black;
-    padding: 1.1rem;
+    width: 500px;
+    background-color: #534b52;
     cursor: pointer;
     text-align: center;
-    opacity: 0.5;
-    border-radius: 50px;
-    border: 4px dotted white;
+    border-top-left-radius: 90px;
+    border-bottom-right-radius: 90px;
+    box-shadow: 0 0 10px black;
 }
 
 #second-section {
     height: 100vh;
-    display: flex;
-    gap: 5%;
-    padding-top: 5%;
-    background-color: #32373b;
-    justify-content: center;
-    border-top: 10px double white;
+    background: linear-gradient(#f1f0ea, #2d232e);    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 #footer {
-    border-top: 10px double white;
     height: 25vh;
-    background-color: #32373b;
+    background-color: #2d232e;
     display: flex;
     align-items: center;
     justify-content: center;
