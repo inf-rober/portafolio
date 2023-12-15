@@ -6,6 +6,10 @@ body {
     padding: 0;
 }
 
+main {
+    background: linear-gradient(#534b52, #f1f0ea);
+}
+
 #text-logo {
     font-family: 'Qwitcher Grypen';
     font-size: 45px;
@@ -68,7 +72,6 @@ body {
     display: flex;
     justify-content: center;
     width: 100%;
-    background: linear-gradient(#534b52, #f1f0ea);
 }
 
 #decalogue {
@@ -97,17 +100,19 @@ body {
 }
 
 #second-section {
-    height: 100vh;
-    background: linear-gradient(#f1f0ea, #2d232e);    
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10vh;
 }
 
 #footer {
     height: 25vh;
-    background-color: #2d232e;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 3%;
 }
+
+
